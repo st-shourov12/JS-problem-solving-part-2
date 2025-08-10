@@ -1,0 +1,31 @@
+const electronics = [
+    {
+        name : "Laptop" ,
+        price : 35000 ,
+        quantity : 1
+    },
+    {
+        name : "Tablet" ,
+        price : 15000 ,
+        quantity : 1
+    },
+    {
+        name : "Mobile" ,
+        price : 20000 ,
+        quantity : 2
+    }
+];
+
+
+
+function calculateElectronicsBudget(name){
+    let sum = 0;
+    for (const product of electronics) {
+        let productPrice = parseFloat(product.price) * parseInt(product.quantity);
+        sum += productPrice;
+    }
+    return sum;
+}
+
+const total = calculateElectronicsBudget(electronics);
+console.log("The Total Value is " + total);
