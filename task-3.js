@@ -28,4 +28,4 @@ function calculateElectronicsBudget(name){
 }
 
 const total = calculateElectronicsBudget(electronics);
-console.log("The Total Value is " + total);
+console.log("The Total Value is " , parseFloat(total));
